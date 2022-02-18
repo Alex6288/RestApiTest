@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Send File</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    form{
+        display: flex;
+        padding: 0.5em;
+        font-size: 1.5em;
+        flex-flow: nowrap column;
+    }
+</style>
+<body>
+<form action="/" enctype="multipart/form-data" method="post">
+    <label for="sendingFile"> Вставте файл для разбора</label><br>
+    <input id="sendingFile" name="sendingFile" type="file"><br>
+    <input type="submit" value="Send" >
+</form>
+</body>
+</html>
